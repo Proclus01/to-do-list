@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './ToDoList.css';
 import ToDo from './ToDo.js';
 import NewToDoForm from './NewToDoForm.js';
 import { v4 as uuidv4 } from 'uuid';
@@ -29,10 +30,10 @@ class ToDoList extends Component {
         )
 
         return (
-            <div>
-                <div>
-                    {todos}
-                </div>
+            <div className="main-container">
+                <h1 id="title">To Do List!</h1>
+                <h3 id="subtitle">A Simple React To-Do List App</h3>
+                {todos}
                 
                 <NewToDoForm />
             </div>
