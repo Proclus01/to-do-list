@@ -7,6 +7,17 @@
     margin: 0.5em;
 }
 
-.ToDo :hover {
-    background-color: coral;
+.ToDoDiv {
+    display: inline-block;
+    padding-right: 1em;
+}
+
+.Edit {
+    display: inline-block;
+    padding-right: 0.5em;
+}
+
+.Delete {
+    display: inline-block;
+    padding-right: 0.5em;
 }
