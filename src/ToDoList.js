@@ -39,7 +39,6 @@ class ToDoList extends Component {
                 </div>
                 
                 <div>
-                    <h5 id="subtitle">New ToDo</h5>
                     <NewToDoForm />
                 </div>
             </div>
