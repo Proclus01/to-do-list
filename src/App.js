@@ -1,9 +1,10 @@
 import './App.css';
+import ToDoList from './ToDoList.js';
 
 function App() {
   return (
     <div className="App">
-      Hello there, I will be placholding the main component today.
+      <ToDoList />
     </div>
   );
 }

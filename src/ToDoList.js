@@ -5,6 +5,7 @@ class ToDoList extends Component {
 
     // Has state that contains all the ToDos
     constructor(props) {
+        super(props);
         this.state = [
             {
                 // We need an id, and a value
