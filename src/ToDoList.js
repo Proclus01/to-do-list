@@ -17,6 +17,12 @@ class ToDoList extends Component {
         }
     }
 
+    create(newToDo) {
+        this.setState({
+            todos: [...this.state.todos, newToDo]
+        })
+    }
+
     // Render all the ToDo components from state
     render() {
 
@@ -39,7 +45,9 @@ class ToDoList extends Component {
                 </div>
                 
                 <div>
-                    <NewToDoForm />
+                    <NewToDoForm 
+                        createToDo={this.create}
+                    />
                 </div>
             </div>
         )

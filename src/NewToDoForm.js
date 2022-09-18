@@ -6,7 +6,7 @@ class NewToDoForm extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { formValue: "" }
+        this.state = { value: "" }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -27,6 +27,8 @@ class NewToDoForm extends Component {
 
         const newToDo = {...this.state, id: uuidv4()};
 
+        this.props.createToDo(newToDo);
+
         this.setState({formValue: ""});
     }
 
@@ -40,8 +42,8 @@ class NewToDoForm extends Component {
                         <label id="label" htmlFor="NewToDo">New ToDo</label>
                         <input 
                             type="text"
-                            name="formValue"
-                            value={this.state.formValue}
+                            name="value"
+                            value={this.state.value}
                             onChange={this.handleChange}
                             id="inputForm" 
                         />
