@@ -3,8 +3,6 @@ import './ToDo.css';
 
 class ToDo extends Component {
 
-
-
     // Display a div with the task of the todo
 
     // Has an X to delete the ToDo
@@ -13,7 +11,7 @@ class ToDo extends Component {
     render() {
         return (
             <div className="ToDo">
-                <div>{this.props.value} Edit X</div>
+                <div>{this.props.todovalue} Edit X</div>
             </div>
         )
     }

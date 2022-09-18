@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 
 class NewToDoForm extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { formValue: "" }
+    }
 
     // onSubmit will create a new ToDo
     //  - call a function passed as props from parent
@@ -10,9 +14,15 @@ class NewToDoForm extends Component {
 
     render() {
         return (
-            <div>
+            <form>
+                <div>
+                    <input 
+                        type="text" 
+                    />
+                </div>
 
-            </div>
+                <button>ADD TODO</button>
+            </form>
         )
     }
 }
