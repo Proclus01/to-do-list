@@ -1,0 +1,11 @@
+.ToDo {
+    display: flex;
+    background-color: orangered;
+    width: 20em;
+    text-align: center;
+    justify-content: center;
+}
+
+.ToDo :hover {
+    background-color: coral;
+}

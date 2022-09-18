@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './ToDo.css';
 
 class ToDo extends Component {
 
@@ -12,11 +13,7 @@ class ToDo extends Component {
     render() {
         return (
             <div className="ToDo">
-                <span>
-                    <div>{this.props.value}</div>
-                    <div>Edit</div>
-                    <div>X</div>
-                </span>
+                <div>{this.props.value} Edit X</div>
             </div>
         )
     }
