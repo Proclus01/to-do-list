@@ -20,7 +20,9 @@ class ToDoList extends Component {
     render() {
         return (
             <div>
-                <p>I will be the main component</p>
+                <ToDo 
+                    value={this.state.todos[0].value}
+                />
             </div>
         )
     }
