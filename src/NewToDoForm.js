@@ -19,6 +19,7 @@ class NewToDoForm extends Component {
     render() {
         return (
             <div className="NewToDoForm">
+
                 <form onSubmit={this.handleSubmit}>
                     <div className="InputForm">
                         <input 

@@ -33,9 +33,15 @@ class ToDoList extends Component {
             <div className="main-container">
                 <h1 id="title">To Do List!</h1>
                 <h3 id="subtitle">A Simple React To-Do List App</h3>
-                {todos}
+
+                <div>
+                    {todos}
+                </div>
                 
-                <NewToDoForm />
+                <div>
+                    <h5 id="subtitle">New ToDo</h5>
+                    <NewToDoForm />
+                </div>
             </div>
         )
     }
