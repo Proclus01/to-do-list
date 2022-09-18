@@ -13,7 +13,7 @@ class ToDo extends Component {
             <div className="ToDo">
                 <div className="ToDoDiv">{this.props.todovalue}</div>
                 <div className="Edit">Edit</div>
-                <div className="Delete">X</div>
+                <button className="Delete" onClick={this.props.removeToDo}>X</button>
             </div>
         )
     }

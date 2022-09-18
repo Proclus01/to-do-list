@@ -15,11 +15,20 @@ class ToDoList extends Component {
             ]
         }
         this.create = this.create.bind(this);
+        this.remove = this.remove.bind(this);
     }
 
     create(newToDo) {
         this.setState({
             todos: [...this.state.todos, newToDo]
+        })
+    }
+
+    remove(id) {
+        this.setState({
+            todos: this.state.todos.filter(
+                todo => todo.id !== id
+            )
         })
     }
 
@@ -31,6 +40,9 @@ class ToDoList extends Component {
                 <ToDo 
                     todovalue={todo.value}
                     key={todo.id}
+                    removeToDo={
+                        () => this.remove(todo.id)
+                    }
                 />
             )
         )
