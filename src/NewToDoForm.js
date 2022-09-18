@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './NewToDoForm.css';
 
 class NewToDoForm extends Component {
 
@@ -14,15 +15,17 @@ class NewToDoForm extends Component {
 
     render() {
         return (
-            <form>
-                <div>
-                    <input 
-                        type="text" 
-                    />
-                </div>
+            <div className="NewToDoForm">
+                <form>
+                    <div className="InputForm">
+                        <input 
+                            type="text" 
+                        />
+                    </div>
 
-                <button>ADD TODO</button>
-            </form>
+                    <button>ADD TODO</button>
+                </form>
+            </div>
         )
     }
 }

@@ -1,0 +1,12 @@
+.NewToDoForm {
+    display: flex;
+    width: 20em;
+    text-align: center;
+    justify-content: center;
+    background-color: orangered;
+}
+
+.InputForm {
+    display: inline-block;
+    margin-right: 1em;
+}
