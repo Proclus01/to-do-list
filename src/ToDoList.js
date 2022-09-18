@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './ToDoList.css';
 import ToDo from './ToDo.js';
 import NewToDoForm from './NewToDoForm.js';
-import { v4 as uuidv4 } from 'uuid';
 
 class ToDoList extends Component {
 
