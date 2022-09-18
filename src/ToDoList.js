@@ -11,10 +11,10 @@ class ToDoList extends Component {
         super(props);
         this.state = {
             todos: [
-                // Array of objects containing id and value
-                {id: uuidv4(), value: "I'm a to-do item!"}
+                // Array of objects containing id and value, added from NewToDoForm
             ]
         }
+        this.create = this.create.bind(this);
     }
 
     create(newToDo) {

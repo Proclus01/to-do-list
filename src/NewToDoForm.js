@@ -29,7 +29,7 @@ class NewToDoForm extends Component {
 
         this.props.createToDo(newToDo);
 
-        this.setState({formValue: ""});
+        this.setState({value: ""});
     }
 
     // Render a form with one text input
