@@ -56,7 +56,7 @@ class ToDo extends Component {
         if (this.state.isEditing) { 
             // Display the form to edit the todo component
             result = (
-                <div className="Todo">
+                <div>
                     <form onSubmit={this.handleUpdate}>
                         <input 
                             type="text"
@@ -71,9 +71,9 @@ class ToDo extends Component {
         } else { 
             // Display a div with the task of the todo
             result = (
-                <div className="Todo">
+                <div className="ToDo">
                     <li 
-                        className={this.props.completed ? 'Todo-task completed' : "Todo-task"}
+                        className={this.props.completed ? 'completed' : ""}
                         onClick={this.handleToggle}
                     >
                         {this.props.todovalue}

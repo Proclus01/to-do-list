@@ -38,8 +38,8 @@ class NewToDoForm extends Component {
             <div className="NewToDoForm">
 
                 <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <label htmlFor="NewToDo">New ToDo</label>
+                    <div className="InputForm">
+                        <label id="label" htmlFor="NewToDo">New ToDo</label>
                         <input 
                             type="text"
                             name="value"
