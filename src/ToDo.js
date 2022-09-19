@@ -11,8 +11,8 @@ class ToDo extends Component {
     render() {
         return (
             <div className="ToDo">
-                <div className="ToDoDiv">{this.props.todovalue}</div>
-                <div className="Edit">Edit</div>
+                <li className="ToDoDiv">{this.props.todovalue}</li>
+                <button className="Edit">Edit</button>
                 <button className="Delete" onClick={this.props.removeToDo}>X</button>
             </div>
         )
