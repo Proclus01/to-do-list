@@ -38,9 +38,10 @@ class ToDoList extends Component {
             todo => (
                 <ToDo 
                     todovalue={todo.value}
+                    id={todo.id}
                     key={todo.id}
                     removeToDo={
-                        () => this.remove(todo.id)
+                        this.remove
                     }
                 />
             )
