@@ -13,6 +13,7 @@ class ToDo extends Component {
         this.toggleForm = this.toggleForm.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleUpdate = this.handleUpdate.bind(this);
+        this.handleToggle = this.handleToggle.bind(this);
     }
 
     // Has an X to delete the ToDo
@@ -42,6 +43,10 @@ class ToDo extends Component {
             [evt.target.name]: evt.target.value
         })
     }
+
+    handleToggle(evt) {
+        this.props.toggleToDo(this.props.id)
+    }
     
     render() {
 
@@ -67,7 +72,12 @@ class ToDo extends Component {
             // Display a div with the task of the todo
             result = (
                 <div className="ToDo">
-                    <li className="ToDoDiv">{this.props.todovalue}</li>
+                    <li 
+                        className={this.props.completed ? 'completed' : ""}
+                        onClick={this.handleToggle}
+                    >
+                        {this.props.todovalue}
+                    </li>
                     <button className="Edit" onClick={this.toggleForm}>Edit</button>
                     <button className="Delete" onClick={this.handleRemove}>X</button>
                 </div>

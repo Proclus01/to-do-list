@@ -25,7 +25,7 @@ class NewToDoForm extends Component {
         // Stop the page from refreshing on form submission
         evt.preventDefault();
 
-        const newToDo = {...this.state, id: uuidv4()};
+        const newToDo = {...this.state, id: uuidv4(), completed: false};
 
         this.props.createToDo(newToDo);
 
