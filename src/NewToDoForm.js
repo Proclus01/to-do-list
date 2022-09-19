@@ -35,7 +35,7 @@ class NewToDoForm extends Component {
     // Render a form with one text input
     render() {
         return (
-            <div>
+            <div className="NewToDoForm">
 
                 <form onSubmit={this.handleSubmit}>
                     <div>
