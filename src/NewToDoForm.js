@@ -35,11 +35,11 @@ class NewToDoForm extends Component {
     // Render a form with one text input
     render() {
         return (
-            <div className="NewToDoForm">
+            <div>
 
                 <form onSubmit={this.handleSubmit}>
-                    <div className="InputForm">
-                        <label id="label" htmlFor="NewToDo">New ToDo</label>
+                    <div>
+                        <label htmlFor="NewToDo">New ToDo</label>
                         <input 
                             type="text"
                             name="value"
