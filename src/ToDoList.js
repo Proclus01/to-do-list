@@ -15,6 +15,7 @@ class ToDoList extends Component {
         }
         this.create = this.create.bind(this);
         this.remove = this.remove.bind(this);
+        this.update = this.update.bind(this);
     }
 
     create(newToDo) {
@@ -31,6 +32,22 @@ class ToDoList extends Component {
         })
     }
 
+    // Update our todos state
+    update(id, updatedTask) {
+        // Get our current list
+        const updatedTodos = this.state.todos.map(
+            todo => {
+                // If there is an id match, update that todo's value with the updated task
+                if (todo.id === id) {
+                    return {...todo, value: updatedTask}
+                }
+                return todo;
+            }
+        );
+
+        this.setState({ todos: updatedTodos })
+    }
+
     // Render all the ToDo components from state
     render() {
 
@@ -43,6 +60,7 @@ class ToDoList extends Component {
                     removeToDo={
                         this.remove
                     }
+                    updateToDo={this.update}
                 />
             )
         )
